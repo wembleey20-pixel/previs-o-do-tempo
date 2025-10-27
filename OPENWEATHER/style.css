@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 40px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+
+.box-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#cidade {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+#pesquisa {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#pesquisa:hover {
+    transform: scale(1.1);
+}
+
+
+#nome-cidade {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#temperatura {
+    font-size: 48px;
+    font-weight: bold;
+     align-items: center;
+}
+
+#umidade {
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+
+.box-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#previsao {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#img-icon {
+    width: 80px;
+}
+
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #temperatura {
+        font-size: 36px;
+        
+    }
+}
